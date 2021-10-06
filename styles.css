@@ -1,0 +1,128 @@
+body {
+  width: auto;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  font-family: Space Mono;
+}
+
+.container {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px 4px rgba(179, 216, 216, 0.733);
+  padding: 20px;
+}
+
+.left-container {
+  width: 45%;
+}
+
+.left-container h1 {
+  color: hsl(183, 100%, 15%);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bill-intput {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+input {
+  width: 80%;
+  background-color: hsl(189, 41%, 97%);
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 90px;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 4px;
+  padding: 5px 0;
+  border: 0 solid;
+  font: 700;
+  font-size: 20px;
+  text-align: center;
+  margin: 7px;
+  font-weight: 700;
+}
+
+.btn-custom {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  font-weight: 700;
+}
+
+.rigth-container {
+  width: 45%;
+  background-color: hsl(183, 100%, 15%);
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.rigth-container h1 {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+}
+
+.rigth-container p {
+  font-size: 12px;
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+}
+
+.tip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.tip-num {
+  width: 150px;
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.total-num {
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
+  font-size: 40px;
+  width: 150px;
+}
+
+.btn-reset {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  width: 100%;
+  margin: 0;
+}
