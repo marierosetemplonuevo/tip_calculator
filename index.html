@@ -34,54 +34,68 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="left-container">
-        <h1>Bill</h1>
-        <div class="bill-input">
-          <input
-            type="number"
-            class="form-control"
-            aria-describedby="&#36;"
-            placeholder="&#36;"
-          />
-          <label for="&#36;"></label>
-        </div>
-
-        <h1>Select Tip %</h1>
-        <div class="btn">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <button class="btn-custom">Custom</button>
-        </div>
-
-        <h1>Number of People</h1>
-        <div>
-          <i class="fas fa-user-alt"></i>
-          <input type="text" class="form-control" />
-        </div>
+    <div class="title">
+      <div class="title-div">
+        <h2>SPLI</h2>
+        <h2>TTER</h2>
       </div>
-      <div class="rigth-container">
-        <div class="tip">
-          <div>
-            <h1>Tip Amount</h1>
-            <p>/ person</p>
-          </div>
-          <div class="tip-num">$ 0.00</div>
-        </div>
-        <div class="total">
-          <div>
-            <h1>Total</h1>
-            <p>/ person</p>
-          </div>
-          <div class="total-num">$ 0.00</div>
-        </div>
 
-        <button class="btn-reset">Reset</button>
+      <div class="container">
+        <div class="left-container">
+          <div class="bill-container">
+            <h1>Bill</h1>
+            <!-- <p id="message"></p> -->
+            <div class="bill-input">
+              <input
+                type="number"
+                id="bill"
+                aria-describedby=""
+                placeholder=""
+              />
+              <!-- class="form-control" -->
+            </div>
+          </div>
+          <h1>Select Tip %</h1>
+          <div id="btnPercent" class="btn">
+            <button class="tip-btn" data-value="0.05">5%</button>
+            <button class="tip-btn" data-value="0.10">10%</button>
+            <button class="tip-btn" data-value="0.15">15%</button>
+            <button class="tip-btn" data-value="0.25">25%</button>
+            <button class="tip-btn" data-value="0.50">50%</button>
+            <button id="customBtn" class="btn-custom">Custom</button>
+          </div>
+          <div class="num-people">
+            <h1>Number of People</h1>
+            <p id="message"></p>
+          </div>
+
+          <div>
+            <input type="number" id="numPeople" min="1" />
+          </div>
+        </div>
+        <div class="rigth-container">
+          <div class="tip">
+            <div>
+              <h1>Tip Amount</h1>
+              <p>/ person</p>
+            </div>
+            <div class="tip-num" id="tipAmount">$0.00</div>
+          </div>
+          <div class="total">
+            <div>
+              <h1>Total</h1>
+              <p>/ person</p>
+            </div>
+            <div class="total-num" id="totalPerPerson">$0.00</div>
+          </div>
+
+          <button class="btn-reset" id="resetBtn">
+            Reset
+          </button>
+        </div>
       </div>
     </div>
+    <script src="main.js"></script>
     <!-- 
     <div class="attribution">
       Challenge by
